@@ -19,7 +19,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * Created by Didoy on 11/9/2016.
+ * Created by Didoy on 11/9/2016s.
  */
 
 public class DialogRemoveList extends Dialog {
