@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Shoper</string>
+    <string name="title_activity_tabbed">tabbed</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- tab titles-->
+    <string name="tab_title_shopping_list">Shopping Lists</string>
+    <string name="tab_title_meal">Meal</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <!--String related to dialog add_add_list-->
+    <string name="add_list">Create a list</string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+    <string name="signup_instruction">Don\'t have account?</string>
+    <string name="signUp">Sign Up</string>
+
+    <string name="sign_in_desc">Already have an account? </string>
+    <string name="signIn">Sign In</string>
+
+
+</resources>

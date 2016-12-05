@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "29676474126",
+    "firebase_url": "https://shoplistplusplus-orv.firebaseio.com",
+    "project_id": "shoplistplusplus-orv",
+    "storage_bucket": "shoplistplusplus-orv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29676474126:android:7518462d4b35f535",
+        "android_client_info": {
+          "package_name": "com.shoppinglist.firebase.didoy.shoper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29676474126-6sd6ql83mt2bgdpoum738kpm35lqcf7n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shoppinglist.firebase.didoy.shoper",
+            "certificate_hash": "3D2150335A774F354F98FB2AE0F4F184D8239E18"
+          }
+        },
+        {
+          "client_id": "29676474126-m48a3risp8s22229nfuo61ttis89uge4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcRT-t4SxhZvrfA90wNBnXXjdrHopd7m0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29676474126-m48a3risp8s22229nfuo61ttis89uge4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

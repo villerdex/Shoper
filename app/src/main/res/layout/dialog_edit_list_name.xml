@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/activity_vertical_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        android:id="@+id/edit_listname_edtTxt"
+        android:layout_alignRight="@+id/edit_listname_edtBtn"
+        android:layout_alignEnd="@+id/edit_listname_edtBtn" />
+
+    <Button
+        android:text="Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/edit_listname_edtBtn"
+        android:layout_alignBaseline="@+id/edit_listname_cancelBtn"
+        android:layout_alignBottom="@+id/edit_listname_cancelBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/edit_listname_cancelBtn"
+        android:layout_below="@+id/edit_listname_edtTxt"
+        android:layout_toLeftOf="@+id/edit_listname_edtBtn"
+        android:layout_toStartOf="@+id/edit_listname_edtBtn"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        style="?android:attr/borderlessButtonStyle"/>
+</RelativeLayout>

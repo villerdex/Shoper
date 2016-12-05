@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- All the string associated with preferences -->
+<resources>
+
+    <!-- key for user'ss email address-->
+    <string name="shared_email"> shared_email </string>
+
+    <!-- key for user's UID-->
+    <string name="shared_uid"> firebase_uid </string>
+
+
+</resources>

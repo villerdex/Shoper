@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    android:minWidth="@dimen/activity_horizontal_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Item Name"
+        android:ems="10"
+        android:id="@+id/add_item_edtText" />
+
+
+    <Button
+        android:text="Add item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_item_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_gravity="right"
+        android:layout_below="@+id/add_item_edtText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
