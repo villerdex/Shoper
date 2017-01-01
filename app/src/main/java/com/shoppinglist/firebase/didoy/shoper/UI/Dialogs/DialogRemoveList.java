@@ -3,13 +3,10 @@ package com.shoppinglist.firebase.didoy.shoper.UI.Dialogs;
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 
-import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.shoppinglist.firebase.didoy.shoper.R;
 import com.shoppinglist.firebase.didoy.shoper.util.Constant;
 import com.shoppinglist.firebase.didoy.shoper.util.Utility;
@@ -24,7 +21,8 @@ import butterknife.OnClick;
 
 public class DialogRemoveList extends Dialog {
 
-    @BindView(R.id.remove_ok_btn) Button removeBtn;
+    @BindView(R.id.remove_ok_btn)
+    Button removeBtn;
     private DatabaseReference ref;
 
     public DialogRemoveList(Context context, DatabaseReference ref) {
@@ -40,7 +38,8 @@ public class DialogRemoveList extends Dialog {
 
     }
 
-    @OnClick(R.id.remove_ok_btn) void removeList(){
+    @OnClick(R.id.remove_ok_btn)
+    void removeList() {
 
         // ActiveList/<UID>/listID this is our URL right now.
         // we need to get the UID so we call the parent path and getKey() method
@@ -50,23 +49,23 @@ public class DialogRemoveList extends Dialog {
         ref.removeValue(new DatabaseReference.CompletionListener() {
             @Override
             public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
-                if (databaseError == null){
+                if (databaseError == null) {
 
                     // TODO in firebase the list must also be deleted from the listOfShoppingList node of users
 
                     // we now move to /items/<listID> so we can delete all the data associated with the list
-                      ref.getParent().getParent().child(Constant.FIREBASE_LOCATION_ITEMS)
-                          .child(UID)
-                          .child(listID)
-                          .removeValue(new DatabaseReference.CompletionListener() {
-                            @Override
-                            public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
-                                if (databaseError == null){
-                                    Utility.ToastMessage(getContext(), "List is successfully remove");
-                                }
+                    ref.getParent().getParent().child(Constant.FIREBASE_LOCATION_ITEMS)
+                            .child(UID)
+                            .child(listID)
+                            .removeValue(new DatabaseReference.CompletionListener() {
+                                @Override
+                                public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
+                                    if (databaseError == null) {
+                                        Utility.ToastMessage(getContext(), "List is successfully remove");
+                                    }
 
-                            }
-                        });
+                                }
+                            });
                 }
             }
         });
